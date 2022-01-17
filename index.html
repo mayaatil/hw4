@@ -6,26 +6,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/style.css" />
-    <title>The Office Quiz</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Londrina+Outline&display=swap" rel="stylesheet">
+    <title>Disney Princess Quiz</title>
 </head>
 
 <body>
     <header>
-        <h1>The Office Quiz</h1>
-        <p>Test your knowledge to see if you're a true fan of The Office! Guess correctly before time runs out or you'll
-            have to deal with Prison Mike!</p>
+        <h1>Disney Princess Quiz</h1>
+        <p>How to Play: You have 60 seconds to guess the Disney Princess before time runs out! Beware, extra time
+            will
+            be deducted for every wrong answer!</p>
     </header>
 
     <main>
-        <div class=timerPlacement>Timer:<span id="timer"></span></div>
+        <div class="timerPlacement">TIMER: <span id="timer"></span></div>
         <div>
-            <button id="start">Can we start this already? (That's what she said)</button>
+            <button id="start">BEGIN</button>
         </div>
-        <div>Current Score</div>
-        <div>Previous Scores</div>
+        <div>
+            <button id="restart">RESTART GAME</button>
+        </div>
+        <div>
+            <button id="log">SCOREBOARD</button>
+        </div>
+        <div id="princessQuestions"></div>
+        <div id="princessAnswers"></div>
+        <div id="hall"></div>
+
+
     </main>
 
-    <footer>The Office</footer>
+    <footer>Second Star on the Right</footer>
     <script src="./assets/script/script.js"></script>
 </body>
 

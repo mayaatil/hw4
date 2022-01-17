@@ -5,31 +5,63 @@
 }
 
 body {
-  background-color: tan;
-  font-family: "Courier New", Courier, monospace;
+  background-color: pink;
+  font-family: "Londrina Outline", cursive;
+  color: white;
+  font-size: 35px;
 }
 
 /*HEADER*/
 header {
   padding: 20px;
-
-  background-color: black;
+  background-color: rgb(231, 156, 168);
   color: white;
 }
 
 /*Button Style*/
 button {
-  background-color: pink;
+  text-decoration: none;
   color: white;
-  size: 200px;
-  border: 100px;
-  border-color: rgb(206, 99, 117);
+  margin: auto;
+  width: 150px;
+  font-family: "Londrina Outline", cursive;
+  display: inline-block;
+  line-height: 40px;
+  font-size: 25px;
+  font-weight: 900;
+  background-color: pink;
+  border: 4px solid rgb(156, 88, 100);
+  border-radius: 10px;
+  box-shadow: 1px 1px 0 rgb(243, 145, 178), 2px 2px 0 rgb(243, 145, 178),
+    3px 3px 0 rgb(243, 145, 178), 4px 4px 0 rgb(243, 145, 178),
+    5px 5px 0 rgb(156, 65, 95);
+  position: relative;
+}
+
+button:after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #fff;
+  transition: all 0.5s;
+}
+
+button:hover {
+  background-color: rgb(253, 207, 215);
+}
+
+button:active {
+  top: 5px;
+  left: 5px;
+  box-shadow: 0 0 0 0;
 }
 
 /*Timer Placement*/
 .timerPlacement {
   float: right;
-  font-size: 20px;
+  font-size: 40px;
   margin-right: 20px;
   padding-top: 20px;
 }
